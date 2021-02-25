@@ -1,0 +1,151 @@
+.articles {
+    background-color: rgb(84, 184, 252, 0.2);
+    padding: 10% 0 5%;
+}
+
+.row {
+    margin: 0 15% 4rem !important;
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: #fcfcfc;
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(252, 252, 252, 0.7);
+    }
+}
+
+.footer {
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(84, 184, 252, 0.1);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.article-text {
+    font-size: 1.4rem !important;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.full-article-text {
+    font-size: 1.6rem !important;
+    text-align: justify;
+    line-height: 2;
+    color: rgb(0, 0, 0, 0.8) !important;
+}
+
+.subscribe {
+    width: 35%;
+    display: flex;
+}
+
+.email {
+    margin-right: 2rem;
+    font-size: 1.4rem !important;
+}
+
+.form-control {
+    padding: 1.3rem !important;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-size: 1.3rem !important;
+}
+
+.MuiSvgIcon-root {
+    width: 1.5em !important;
+    height: 1.5em !important;
+}
+
+.makeStyles-grey-9:hover {
+    background-color: rgba(33, 33, 33, 0.8);
+    cursor: pointer;
+}
+
+.article-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.skeleton-img {
+    border-radius: 50%!important;
+}
+
+.article-link{
+    text-decoration: none!important;
+}
+
+.skeleton-main-img{
+    width: 100%;
+    height: 350px;
+}
+
+.spinnerLoader{
+    display: flex!important;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .row {
+        margin: 0 1% 4rem !important;
+        padding: 2rem;
+    }
+    .article-img {
+        height: 180px !important;
+        width: 180px !important;
+    }
+    .articles {
+        padding: 20% 0 5%;
+    }
+    .subscribe {
+        width: 65%;
+        display: flex;
+    }
+    .full-article-title {
+        font-size: 2.5rem !important;
+        margin: 2rem 0 !important;
+        font-weight: bold !important;
+    }
+    .makeStyles-media-8 {
+        height: 250px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .row {
+        margin: 0 1% 4rem !important;
+        padding: 2rem 0.6rem;
+    }
+    .skeleton-img {
+        border-radius: 0!important;
+    }
+    .article-img {
+        height: 180px !important;
+        width: 100% !important;
+        border-radius: 0 !important;
+    }
+    .articles {
+        padding: 20% 0 5%;
+    }
+    .subscribe {
+        width: 80%;
+        display: flex;
+    }
+
+    .footer {
+        padding: 10% 0;
+    }
+}

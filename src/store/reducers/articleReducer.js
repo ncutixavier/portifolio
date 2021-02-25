@@ -1,24 +1,24 @@
-import { GET_ARTICLES, GET_ARTICLES_ERROR } from '../types'
+import { GET_ARTICLES_BY_ID, GET_ARTICLES_BY_ID_ERROR } from '../types'
 
 const initialState = {
-    posts: [],
+    post: [],
     loading: true,
     error: ''
 }
 
 export default function (state = initialState, action) {
     switch (action.type) {
-        case GET_ARTICLES:
+        case GET_ARTICLES_BY_ID:
             return {
-                posts: action.payload,
+                post: action.payload,
                 loading: false,
                 error: ''
             }
-        case GET_ARTICLES_ERROR:
+        case GET_ARTICLES_BY_ID_ERROR:
             return {
                 loading: false,
                 error: action.payload,
-                posts: [],
+                post: [],
             }
         default:
             return state
