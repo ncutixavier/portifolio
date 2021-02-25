@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux'
-import articleReducer from './articlesReducer'
+import articlesReducer from './articlesReducer'
+import articleReducer from './articleReducer'
 
-export default combineReducers({
-    articlesList: articleReducer
+const allReducers = combineReducers({
+    articlesList: articlesReducer,
+    article: articleReducer,
 })
+
+export default allReducers

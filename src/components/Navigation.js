@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Avatar from '@material-ui/core/Avatar';
 import { grey } from '@material-ui/core/colors';
+import { BrowserRouter as Link } from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -46,9 +47,13 @@ export default function ButtonAppBar() {
                     {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton> */}
+
                     <Typography variant="h4" className={classes.title}>
-                        <Avatar className={classes.purple}>NX</Avatar>
+                        <a href="/">
+                            <Avatar className={classes.purple}>NX</Avatar>
+                        </a>
                     </Typography>
+
                     <Button color="inherit" variant="outlined" className={classes.loginBtn}>Login</Button>
                 </Toolbar>
             </AppBar>

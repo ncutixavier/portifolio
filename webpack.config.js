@@ -4,6 +4,7 @@ const webpack = require("webpack");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ip = require("ip");
 const hostname = ip.address() || 'localhost';
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
 
 module.exports = {
   mode: 'development',
@@ -68,6 +69,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({ template: "./public/index.html" }),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin(),
+    new NodePolyfillPlugin()
   ]
 }; 
