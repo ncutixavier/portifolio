@@ -98,6 +98,50 @@
     align-items: center;
 }
 
+.back-btn.row {
+    background-color: transparent;
+    padding: .8rem 0;
+    font-size: 1.6rem;
+    margin-bottom: .5rem!important;
+
+    &:hover{
+        background-color: none!important;
+        cursor: none;
+    }
+}
+
+.back-btn-div{
+    background-color: #fff;
+    padding: .6rem 1rem;
+    border-radius: 1rem;
+    transition: all 1s ease-in-out;
+    &:hover{
+        padding-left: 1rem!important;
+        transition: padding-left 1s ease-in-out;
+    }
+}
+
+.card-header{
+    padding: 0!important;
+    background-color: transparent!important;
+    margin-bottom: 1.5rem!important;
+    
+    .MuiTypography-body2{
+        font-size: 1.6rem!important;
+        margin-bottom: .4rem;
+    font-family: "Work Sans"!important;
+
+    }
+
+    .MuiTypography-colorTextSecondary{
+        font-size: 1.4rem!important;
+    }
+}
+
+.error{
+    color: rgb(190, 9, 9);
+}
+
 @media (max-width: 768px) {
     .row {
         margin: 0 1% 4rem !important;

@@ -3,9 +3,9 @@ import { Row, Col } from 'reactstrap';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser'
+import ReactHtmlParser from 'react-html-parser'
 
-const ArticleTemplate = ({ article, handleClick }) => {
+const ArticleTemplate = ({ article }) => {
   const formatDate = (dt) => {
     const months = [
       'Jan',
@@ -30,7 +30,6 @@ const ArticleTemplate = ({ article, handleClick }) => {
       md={12}
       sm={12}
       key={article._id}
-      onClick={() => handleClick(article)}
     >
       <Col lg={4} md={4} sm={4}>
         <CardMedia
@@ -46,7 +45,6 @@ const ArticleTemplate = ({ article, handleClick }) => {
           </Typography>
           <Typography
             color='textSecondary'
-            component='p'
             className='article-text'
           >
             {ReactHtmlParser(article.content.substr(0, 250) + '...')}
