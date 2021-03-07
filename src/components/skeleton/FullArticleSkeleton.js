@@ -17,7 +17,7 @@ export default function Variants(props) {
                         </Typography>
                     </Box>
                     <Box my={2} lineHeight={2}>
-                        <Typography variant="p" my={4}>
+                        <Typography my={4}>
                             <Skeleton />
                             <Skeleton />
                             <Skeleton />
@@ -27,7 +27,7 @@ export default function Variants(props) {
                     </Box>
 
                     <Box my={2} lineHeight={2}>
-                        <Typography variant="p" my={4}>
+                        <Typography my={4}>
                             <Skeleton />
                             <Skeleton />
                             <Skeleton />
@@ -37,7 +37,7 @@ export default function Variants(props) {
                     </Box>
 
                     <Box my={2} lineHeight={2}>
-                        <Typography variant="p" my={4}>
+                        <Typography my={4}>
                             <Skeleton />
                             <Skeleton />
                             <Skeleton />
@@ -47,7 +47,7 @@ export default function Variants(props) {
                     </Box>
 
                     <Box my={2} lineHeight={2}>
-                        <Typography variant="p" my={4}>
+                        <Typography my={4}>
                             <Skeleton />
                         </Typography>
                     </Box>

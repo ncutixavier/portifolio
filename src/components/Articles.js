@@ -14,15 +14,6 @@ export default function Articles() {
     dispatch(getArticles());
   }, [dispatch]);
 
-  const clickedCard = (e) => {
-    let key = e.target;
-    console.log('clicked', key);
-  };
-
-  const handleCardClick = (article) => {
-    console.log('clicked card is ', article);
-  };
-
   return (
     <div className='articles'>
       <Container>
@@ -40,7 +31,6 @@ export default function Articles() {
               >
                 <ArticleTemplate
                   article={article}
-                  handleClick={handleCardClick}
                   key={article._id}
                 />
               </Link>

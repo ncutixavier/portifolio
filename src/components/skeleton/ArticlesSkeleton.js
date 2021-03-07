@@ -19,7 +19,6 @@ const ArticleSkeleton = () => {
                             </Typography>
                             <Typography
                                 color='textSecondary'
-                                component='p'
                                 className='article-text'
                             ><Skeleton count={5} /></Typography>
                         </CardContent>

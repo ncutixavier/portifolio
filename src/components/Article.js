@@ -9,7 +9,6 @@ export class Article extends Component {
     const postId = this.props.match.params.id;
     return (
       <div>
-        {console.log(this.props.match.params.id)}
         <Navigation />
         <FullArticle id={postId} />
         <Footer />
