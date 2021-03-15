@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
@@ -18,10 +18,15 @@ import CardHeader from '@material-ui/core/CardHeader';
 import Avatar from '@material-ui/core/Avatar';
 import { pink } from '@material-ui/core/colors';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 import validate from './Validate';
 import axios from 'axios';
 import { Spinner } from 'reactstrap';
+
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+// import CardContent from '@material-ui/core/CardContent';
 
 const useStyles = makeStyles((theme) => ({
   large: {
@@ -40,6 +45,9 @@ const useStyles = makeStyles((theme) => ({
   pink: {
     color: theme.palette.getContrastText(pink[500]),
     backgroundColor: pink[500],
+  },
+  root: {
+    maxWidth: 345,
   },
 }));
 
@@ -63,7 +71,7 @@ export default function Articles(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validate(values));
-    setSubmitted(true)
+    setSubmitted(true);
     if (Object.keys(validate(values)).length === 0) {
       // console.log('Val:', values);
       axios
@@ -73,20 +81,21 @@ export default function Articles(props) {
         )
         .then(function (response) {
           if (response) {
-            setSubmitted(false)
-            values.name = ''
-            values.comment = ''
-            setModal(!modal)
+            setSubmitted(false);
+            values.name = '';
+            values.comment = '';
+            setModal(!modal);
             window.location.reload();
             // console.log(response)
           }
-        }).catch(function (err) {
+        })
+        .catch(function (err) {
           if (err) {
-            setSubmitted(false)
+            setSubmitted(false);
           }
         });
     } else {
-      setSubmitted(false)
+      setSubmitted(false);
       // console.log('Error:', validate(values));
       console.log('Error occurred');
     }
@@ -111,7 +120,36 @@ export default function Articles(props) {
           {loading ? (
             <FullArticleSkeleton />
           ) : error ? (
-            error.message
+            <div class='error-message'>
+              <Row className='back-btn'>
+
+                <Card className={classes.root}>
+                  <Card>
+                    <CardContent>
+                      <Typography
+                        variant='h3'
+                        component='body2'
+                      >
+                          NOT FOUND
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                  <CardActionArea>
+                    <CardContent>
+                      <Typography gutterBottom variant='h5' component='h2'>
+                        The article you're trying to retrieve is no longer existed. Please go back to access existed articles.
+                      </Typography>
+
+                    </CardContent>
+                  </CardActionArea>
+                    <CardActions>
+                      <a href="/blogs">
+                        <span className='back-btn-div'>Go Back</span>
+                      </a>
+                  </CardActions>
+                </Card>
+              </Row>
+            </div>
           ) : post.data.article ? (
             <div>
               <Row className='back-btn'>
@@ -224,11 +262,25 @@ export default function Articles(props) {
                         </FormGroup>
                       </ModalBody>
                       <ModalFooter>
-                        <Button color='primary' type='submit' variant="contained" className="mr-3">
-                          <span className="mr-3">Send</span>
-                          {submitted && (<Spinner color="light" style={{ width: '1rem', height: '1rem' }} />)}
+                        <Button
+                          color='primary'
+                          type='submit'
+                          variant='contained'
+                          className='mr-3'
+                        >
+                          <span className='mr-3'>Send</span>
+                          {submitted && (
+                            <Spinner
+                              color='light'
+                              style={{ width: '1rem', height: '1rem' }}
+                            />
+                          )}
                         </Button>
-                        <Button color='secondary' onClick={toggle} variant="contained">
+                        <Button
+                          color='secondary'
+                          onClick={toggle}
+                          variant='contained'
+                        >
                           Cancel
                         </Button>
                       </ModalFooter>
