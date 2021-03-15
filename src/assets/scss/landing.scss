@@ -129,7 +129,7 @@
     .MuiTypography-body2{
         font-size: 1.6rem!important;
         margin-bottom: .4rem;
-    font-family: "Work Sans"!important;
+    font-family: "IBM Plex Sans"!important;
 
     }
 
@@ -140,6 +140,14 @@
 
 .error{
     color: rgb(190, 9, 9);
+}
+
+.error-message{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Sans"!important;
 }
 
 @media (max-width: 768px) {
@@ -165,6 +173,12 @@
     }
     .makeStyles-media-8 {
         height: 250px !important;
+    }
+    .error-message{
+        height: 58vh;
+    }
+    #title{
+        font-size: 20px!important;
     }
 }
 

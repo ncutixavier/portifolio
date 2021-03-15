@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Avatar from '@material-ui/core/Avatar';
-import { grey } from '@material-ui/core/colors';
+import { grey, cyan } from '@material-ui/core/colors';
 import { BrowserRouter as Link } from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
@@ -25,8 +25,8 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '1.4rem',
     },
     purple: {
-        color: theme.palette.getContrastText(grey[900]),
-        backgroundColor: grey[900],
+        color: theme.palette.getContrastText(cyan[400]),
+        backgroundColor: cyan[400],
         width: theme.spacing(5),
         height: theme.spacing(5),
         fontSize: '1.8rem',

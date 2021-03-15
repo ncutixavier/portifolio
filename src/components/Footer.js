@@ -28,23 +28,27 @@ export default function IconAvatars() {
                 <Button color="primary">subscribe</Button>
             </Form>
             <div className="icons">
+                <a href="https://web.facebook.com/ndagijimana.xavier.1" target="_blank">
                 <Avatar className={classes.grey}>
                     <FacebookIcon />
-                </Avatar>
+                </Avatar></a>
+                <a href="https://twitter.com/ncutixavier" target="_blank">
                 <Avatar className={classes.grey}>
                     <TwitterIcon />
-                </Avatar>
+                </Avatar></a>
+                <a href="https://www.instagram.com/ncutixavier/?hl=en" target="_blank">
                 <Avatar className={classes.grey}>
                     <InstagramIcon />
-                </Avatar>
+                </Avatar></a>
+                <a href="http://linkedin.com/in/ncuti-xavier-979284197" target="_blank">
                 <Avatar className={classes.grey}>
                     <LinkedInIcon />
-                </Avatar>
-                <Link to="https://github.com/ncutixavier">
+                </Avatar></a>
+                <a href="https://github.com/ncutixavier" target="_blank">
                     <Avatar className={classes.grey}>
                         <GitHubIcon />
                     </Avatar>
-                </Link>
+                </a>
             </div>
         </div>
     );

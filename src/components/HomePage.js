@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 
 const HomePage = () => {
+    const history = useHistory();
+    useEffect(() => {
+        setTimeout(() => {
+            history.push('/blogs');
+        }, 1000);
+    }, []);
     return (
         <div className="homepage">
             <div id='animate-bg'>
