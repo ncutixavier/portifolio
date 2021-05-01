@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
     },
     purpleToggle: {
-        color: '#000',
+        color: '#4dd0e1',
         fontSize: '2rem',
     }
 }));
@@ -40,13 +40,16 @@ const NavBar = (props) => {
         function onScroll() {
             let currentPosition = window.pageYOffset;
             if (currentPosition > 20) {
-                setColor("light")
-                console.log(scrollTop)
-                document.querySelector(".navbar").classList.add("nav-shadow")
+                setColor("dark")
+                // console.log(scrollTop)
+                document.querySelector('.down-btn').style.display = "none"
+                document.querySelector(".navbar-collapse").style.background = "#343a40!important"
                 setScrolling(false);
             } else {
                 setColor("")
                 setScrolling(true);
+                document.querySelector(".navbar-collapse").style.background = "#212f3c!important"
+                document.querySelector('.down-btn').style.display = "inline"
             }
             setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
         }
@@ -89,7 +92,7 @@ const NavBar = (props) => {
                                 to="about"
                                 spy={true}
                                 smooth={true}
-                                offset={-100}
+                                offset={-70}
                                 duration={1000}>
                                 About
                             </Link>
@@ -97,10 +100,10 @@ const NavBar = (props) => {
                         <NavItem>
                             <Link
                                 className="nav-link"
-                                to="works"
+                                to="work"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={-40}
                                 duration={1000}>
                                 Works
                             </Link>
