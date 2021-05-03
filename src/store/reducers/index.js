@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux'
 import articlesReducer from './articlesReducer'
-import projectsReducer from './projectsReducer'
+import projectReducer from './ProjectReducer'
 import articleReducer from './articleReducer'
 
 const allReducers = combineReducers({
     articlesList: articlesReducer,
-    projectsList: projectsReducer,
+    projectsList: projectReducer,
     article: articleReducer,
 })
 
