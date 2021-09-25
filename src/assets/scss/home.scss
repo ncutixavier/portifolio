@@ -251,12 +251,17 @@
         padding: 1.3rem 2rem;
         color: #000;
         font-size: 1.4rem;
+        cursor: pointer;
+        &:hover{
+            background-color: #1c2833;
+            color: #ccc;
+        }
     }
 }
 
 .project {
     // background-image: linear-gradient(to bottom, rgb(52, 73, 94), rgb(28, 40, 51, .8)), url("https://images.unsplash.com/photo-1617975214713-a51d4727b2f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw4ODc4MTc2fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
-    background-image: linear-gradient(to bottom, rgb(52, 73, 94), rgb(28, 40, 51, 0.8));
+    background-image: linear-gradient(to bottom, rgb(52, 73, 94), rgba(28, 40, 51, 0.8));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

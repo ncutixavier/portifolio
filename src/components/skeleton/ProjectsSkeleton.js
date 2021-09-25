@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import Typography from '@material-ui/core/Typography';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 

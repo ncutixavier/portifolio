@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container, Row, Col } from 'reactstrap';
 import CardMedia from '@material-ui/core/CardMedia';
 import { connect } from 'react-redux';
-import { getProjects } from '../../store/actions/projectsAction';
+import { getProjects } from '../../redux/actions/projectsAction';
 import ProjectSkeleton from '../../components/skeleton/ProjectsSkeleton'
 
 class Project extends Component {
@@ -20,7 +20,7 @@ class Project extends Component {
 
                     {this.props.projects.loading ? (
                         <ProjectSkeleton />
-                    ) : this.props.projects.error.length != 0 ? (
+                    ) : this.props.projects.error.length !== 0 ? (
                         this.props.projects.error.message
                     ) : this.props.projects.projects.projects ? (
                         <Row className="mx-0">
@@ -37,7 +37,7 @@ class Project extends Component {
                                     <div className="language">
                                         <span>{p.languages}</span>
                                     </div>
-                                    <a href={p.link} className="more-btn" target="_blank">More</a>
+                                    <a rel="noreferrer" href={p.link} className="more-btn" target="_blank">More</a>
                                 </Col>
                             ))}
                         </Row>

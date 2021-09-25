@@ -7,7 +7,7 @@ const HomePage = () => {
         setTimeout(() => {
             history.push('/blogs');
         }, 1000);
-    }, []);
+    }, [history]);
     return (
         <div className="homepage">
             <div id='animate-bg'>

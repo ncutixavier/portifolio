@@ -8,7 +8,7 @@ const services = [
     {
         id: 1,
         image: 'http://',
-        text: 'We develop a Web site for the Internet either static or dynamic web application.',
+        text: 'Developing website for the Internet either static or dynamic web application.',
         title: 'Web Development',
         icon: <PublicIcon className="ss-icon" />
     },
@@ -17,14 +17,14 @@ const services = [
         image: 'http://',
         icon: <PhoneIphoneIcon className="ss-icon" />,
         title: 'Mobile Application',
-        text: 'We create software applications that run on a mobile device.'
+        text: 'Developing software applications that run on a mobile device.'
     },
     {
         id: 3,
         image: 'http://',
         icon: <DesktopWindowsIcon className="ss-icon" />,
         title: 'Desktop Application',
-        text: 'We make software applications that run natively on operating systems like Windows.'
+        text: 'Developing software applications that run natively on operating systems like Windows.'
     }
 ]
 

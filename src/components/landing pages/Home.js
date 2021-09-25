@@ -1,24 +1,21 @@
 import React from 'react';
 import NavBar from './NavBar';
-import { Container, Row, Col } from 'reactstrap';
-import CardMedia from '@material-ui/core/CardMedia';
+import { Container } from 'reactstrap';
 import Button from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
-import home_img from '../../assets/img/home_img.png'
+// import { makeStyles } from '@material-ui/core/styles';
 import waves from '../../assets/img/wave.svg'
-import down_btn from '../../assets/img/down_btn.png'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link } from "react-scroll";
 
-const useStyles = makeStyles({
-    media: {
-        height: 350,
-        width: '100%'
-    },
-});
+// const useStyles = makeStyles({
+//     media: {
+//         height: 350,
+//         width: '100%'
+//     },
+// });
 
 const Home = () => {
-    const classes = useStyles();
+    // const classes = useStyles();
 
     return (
         <div className='home'>
@@ -39,18 +36,21 @@ const Home = () => {
                         <div className="home-name">I'm Ncuti Xavier</div>
                         <div className="h2 my-3">A software developer</div>
                         <div className="home-btn-group mt-5 d-flex">
-                            <Button className="home-btn-hire mr-4" variant="contained" color="primary" disableElevation>Hire Me</Button>
-                            <Button className="home-btn-cv" variant="outlined" color="primary">Get CV</Button>
+                            <Link
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={1000}>
+                                <Button className="home-btn-hire mr-4" variant="contained" color="primary" disableElevation>Hire Me</Button>
+                            </Link>
+                            <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1zKwLlkgQ5no-1fRFxx5o8KYPNJYukvuOb44T-LXKrwU/edit?usp=sharing">
+                                <Button className="home-btn-cv" variant="outlined" color="primary">Get CV</Button>
+                            </a>
+                            
                         </div>
 
                     </div>
-                    {/* <Col lg={6} md={12}>
-                        <CardMedia
-                            className={classes.media}
-                            image={home_img}
-                            title=''
-                        />
-                    </Col> */}
                 </div>
             </Container>
             <img src={waves} alt="" className="img-wave"/>
