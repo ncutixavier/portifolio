@@ -7,7 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { getArticle } from '../store/actions/articleAction';
+import { getArticle } from '../redux/actions/articleAction';
 import { formatDate } from '../utils/helper';
 import ReactHtmlParser from 'react-html-parser';
 import FullArticleSkeleton from './skeleton/FullArticleSkeleton';
@@ -107,7 +107,7 @@ export default function Articles(props) {
 
   useEffect(() => {
     dispatch(getArticle(props.id));
-  }, [dispatch]);
+  });
 
   const [modal, setModal] = useState(false);
 
@@ -236,7 +236,6 @@ export default function Articles(props) {
                           <Label for='name'>Name</Label>
                           <Input
                             type='text'
-                            name='text'
                             id='name'
                             name='name'
                             value={values.name}
@@ -250,7 +249,6 @@ export default function Articles(props) {
                           <Label for='name'>Comment</Label>
                           <Input
                             type='textarea'
-                            name='text'
                             name='comment'
                             id='comment'
                             value={values.comment}

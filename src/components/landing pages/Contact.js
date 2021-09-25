@@ -7,7 +7,6 @@ import {
     Button,
     Form,
     FormGroup,
-    Label,
     Input,
 } from 'reactstrap';
 import swal from 'sweetalert';
@@ -54,12 +53,12 @@ class Contact extends Component {
             errors.emailErrorStatus = true;
             errors.emailError = 'Provide a valid email';
         }
-        if (this.state.name.length == 0) {
+        if (this.state.name.length === 0) {
             isError = true;
             errors.nameErrorStatus = true;
             errors.nameError = 'Name is required!';
         }
-        if (this.state.message.length == 0) {
+        if (this.state.message.length === 0) {
             isError = true;
             errors.messageErrorStatus = true;
             errors.messageError = 'Message is required!';
@@ -78,11 +77,11 @@ class Contact extends Component {
         const TEMPLATE_ID = 'template_u4z6v9l';
         if (!error) {
             document.querySelector('.send-btn').innerHTML = "sending..."
-            const data = {
-                name: this.state.name,
-                email: this.state.email,
-                message: this.state.message
-            }
+            // const data = {
+            //     name: this.state.name,
+            //     email: this.state.email,
+            //     message: this.state.message
+            // }
             try {
                 emailjs
                     .send(SERVICE_ID, TEMPLATE_ID, {
@@ -99,9 +98,9 @@ class Contact extends Component {
                                 button: "Okay"
                             });
                             document.querySelector('.send-btn').innerHTML = "send"
-                            this.state.name = '';
-                            this.state.email = '';
-                            this.state.message = '';
+                            this.setState({ name: "" })
+                            this.setState({ email: "" })
+                            this.setState({ message: "" })
                         },
                         (error) => {
                             swal({

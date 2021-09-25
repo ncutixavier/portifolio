@@ -10,7 +10,7 @@ import {
 import Avatar from '@material-ui/core/Avatar'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
-import { deepPurple, cyan } from '@material-ui/core/colors'
+import { cyan } from '@material-ui/core/colors'
 import DehazeIcon from '@material-ui/icons/Dehaze'
 import { Link } from "react-scroll";
 
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
 const NavBar = (props) => {
     const classes = useStyles()
     const [isOpen, setIsOpen] = useState(false);
-    const [scrolling, setScrolling] = useState(false);
+    // const [scrolling, setScrolling] = useState(false);
     const [scrollTop, setScrollTop] = useState(0);
     const [color, setColor] = useState("");
 
@@ -44,10 +44,10 @@ const NavBar = (props) => {
                 // console.log(scrollTop)
                 document.querySelector('.down-btn').style.display = "none"
                 document.querySelector(".navbar-collapse").style.background = "#343a40!important"
-                setScrolling(false);
+                // setScrolling(false);
             } else {
                 setColor("")
-                setScrolling(true);
+                // setScrolling(true);
                 document.querySelector(".navbar-collapse").style.background = "#212f3c!important"
                 document.querySelector('.down-btn').style.display = "inline"
             }

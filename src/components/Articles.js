@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Container, Col } from 'reactstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { getArticles } from '../store/actions/articlesAction';
+import { getArticles } from '../redux/actions/articlesAction';
 import ArticleSkeleton from './skeleton/ArticlesSkeleton';
 import ArticleTemplate from './ArticleTemplate';
 import { Link } from 'react-router-dom';
