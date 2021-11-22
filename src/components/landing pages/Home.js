@@ -6,24 +6,25 @@ import waves from '../../assets/img/wave.svg';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link } from 'react-scroll';
 import { NavBar } from './NavBar';
-import Icons from '../Icons';
 
 const Home = () => {
-  // const classes = useStyles();
 
   return (
     <div className='home'>
       <NavBar />
-      <Link
-        className='down-btn'
-        to='about'
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={2000}
-      >
-        <ExpandMoreIcon className='expand' />
-      </Link>
+      <div className='down-btn-cont'>
+        <Link
+          className='down-btn'
+          to='about'
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={2000}
+        >
+          <ExpandMoreIcon className='expand' />
+        </Link>
+      </div>
+
       <Container>
         <div className='home-content justify-content-center'>
           <div lg={6} md={12} className='home-intro'>
@@ -32,7 +33,7 @@ const Home = () => {
             </div>
             <div className='home-name'>I'm Xavier Ncuti</div>
             <div className='h3 mb-4'>A software developer</div>
-            <Icons />
+            {/* <Icons /> */}
             <div className='home-btn-group mt-5 d-flex'>
               <Link
                 to='contact'

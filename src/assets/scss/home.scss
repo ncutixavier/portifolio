@@ -1,6 +1,12 @@
 .home {
     // height: 100vh;
-    background-color: #212f3c;
+    background-color: #212e3b;
+    background: linear-gradient(to bottom, rgba(33, 46, 59, 0.9), rgba(33, 46, 59, 100)),
+        url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 @media (min-width: 768px) {
@@ -67,7 +73,7 @@
         box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
             rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
     }
-    .ft .col:nth-child(1){
+    .ft .col:nth-child(1) {
         padding: 2rem 0;
     }
 }
@@ -86,7 +92,7 @@ a.active {
 
 .navbar {
     padding: 1.5rem 2rem !important;
-    background-color: transparent !important;
+    background-color: rgba(33, 46, 59, 0.5) !important;
 }
 
 .nav-shadow {
@@ -151,7 +157,6 @@ a.active {
 
 .down-btn {
     position: absolute;
-    top: 85%;
     left: 48%;
     animation: nudge 2s linear infinite alternate;
     padding: 1rem;
@@ -159,9 +164,6 @@ a.active {
     z-index: 999;
     border-radius: 50%;
     background-color: #fff;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-        0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-        0 100px 80px rgba(0, 0, 0, 0.12);
     transition: all 1s;
     .expand {
         color: #4dd0e1;
@@ -385,10 +387,10 @@ a.active {
     background: linear-gradient(to right, #34495e, #1c2833);
 }
 
-.ft{
+.ft {
     padding: 3% 0;
     background: linear-gradient(to bottom, #34495e, #1c2833);
-    .col{
+    .col {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -403,8 +405,22 @@ a.active {
     bottom: -3px;
 }
 
-.invalid-feedback{
+.invalid-feedback {
     font-size: 13px;
+}
+
+.skills {
+    .skill-item {
+        margin: 15px 0;
+        .skill-title {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+    }
+}
+
+.service-btn{
+    margin-top: 40px;
 }
 
 @keyframes nudge {

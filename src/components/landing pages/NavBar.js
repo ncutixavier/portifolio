@@ -42,16 +42,9 @@ export const NavBar = (props) => {
       let currentPosition = window.pageYOffset;
       if (currentPosition > 20) {
         setColor('dark');
-        // console.log(scrollTop)
         document.querySelector('.down-btn').style.display = 'none';
-        document.querySelector('.navbar-collapse').style.background =
-          '#343a40!important';
-        // setScrolling(false);
       } else {
         setColor('');
-        // setScrolling(true);
-        document.querySelector('.navbar-collapse').style.background =
-          '#212f3c!important';
         document.querySelector('.down-btn').style.display = 'inline';
       }
       setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
