@@ -25,15 +25,9 @@ const About = () => {
             <div className='display-3 mb-3'>Who I am?</div>
             <div className='about-text'>
               <p>
-                I'm a software engineer / developer based in Kigali, Rwanda. I
-                have a passion for software development and I like to work with
-                others to solve the real world problems.
+                I'm a software engineer based in Kigali, Rwanda.
               </p>
-              {/* <p>
-                I know how to create web based application from scratch. My goal
-                is to be focused and help you to convey the message you want to
-                send.
-              </p> */}
+              
               <p>
                 I'm currently available for freelancer work. If you have a
                 project that you want to get started, think you need my help

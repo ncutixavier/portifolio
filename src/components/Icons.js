@@ -19,31 +19,44 @@ const useStyles = makeStyles((theme) => ({
 function Icons() {
     const classes = useStyles();
 
+    const icons = [
+      {
+        icon: <FacebookIcon />,
+        link: 'https://www.facebook.com/ndagijimana.xavier.1',
+      },
+      {
+        icon: <TwitterIcon />,
+        link: 'https://twitter.com/ncutixavier',
+      },
+      {
+        icon: <InstagramIcon />,
+        link: 'https://www.instagram.com/ncutixavier/?hl=en',
+      },
+      {
+        icon: <LinkedInIcon />,
+        link: 'http://linkedin.com/in/ncuti-xavier-979284197',
+      },
+      {
+        icon: <GitHubIcon />,
+        link: 'https://github.com/ncutixavier',
+      },
+    ];
+
     return (
-        <div className="icons">
-            <a rel="noreferrer" href="https://web.facebook.com/ndagijimana.xavier.1" target="_blank">
-                <Avatar className={classes.grey}>
-                    <FacebookIcon />
-                </Avatar></a>
-            <a rel="noreferrer" href="https://twitter.com/ncutixavier" target="_blank">
-                <Avatar className={classes.grey}>
-                    <TwitterIcon />
-                </Avatar></a>
-            <a rel="noreferrer" href="https://www.instagram.com/ncutixavier/?hl=en" target="_blank">
-                <Avatar className={classes.grey}>
-                    <InstagramIcon />
-                </Avatar></a>
-            <a rel="noreferrer" href="http://linkedin.com/in/ncuti-xavier-979284197" target="_blank">
-                <Avatar className={classes.grey}>
-                    <LinkedInIcon />
-                </Avatar></a>
-            <a rel="noreferrer" href="https://github.com/ncutixavier" target="_blank">
-                <Avatar className={classes.grey}>
-                    <GitHubIcon />
-                </Avatar>
-            </a>
-        </div>
-    )
+      <div className='icons'>
+        {icons.map((icon, index) => (
+          <a
+            rel='noreferrer'
+            href={icon.link}
+            target='_blank'
+          >
+            <Avatar className={classes.grey}>
+              {icon.icon}
+            </Avatar>
+          </a>
+        ))}
+      </div>
+    );
 }
 
 export default Icons

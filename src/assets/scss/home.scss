@@ -80,6 +80,10 @@
     cursor: pointer;
 }
 
+a.active {
+    color: #46adbb !important;
+}
+
 .navbar {
     padding: 1.5rem 2rem !important;
     background-color: transparent !important;
@@ -251,11 +255,6 @@
         padding: 1.3rem 2rem;
         color: #000;
         font-size: 1.4rem;
-        cursor: pointer;
-        &:hover{
-            background-color: #1c2833;
-            color: #ccc;
-        }
     }
 }
 
