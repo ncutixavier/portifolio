@@ -40,7 +40,7 @@ export const NavBar = (props) => {
   useEffect(() => {
     function onScroll() {
       let currentPosition = window.pageYOffset;
-      if (currentPosition > 20) {
+      if (currentPosition > 200) {
         setColor('dark');
         document.querySelector('.down-btn').style.display = 'none';
       } else {
@@ -78,7 +78,7 @@ export const NavBar = (props) => {
       to: 'contact',
     },
   ];
-
+console.log(":::", color)
   return (
     <div name='home'>
       <Navbar fixed='top' color={color} light expand='md'>

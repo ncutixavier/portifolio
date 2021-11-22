@@ -45,13 +45,13 @@ const Home = () => {
                 <Button
                   className='home-btn-hire mr-4'
                   variant='contained'
-                  color='primary'
+                  color='black'
                   disableElevation
                 >
-                  Hire Me
+                  Get in touch
                 </Button>
               </Link>
-              <a
+              {/* <a
                 target='_blank'
                 rel='noreferrer'
                 href='https://docs.google.com/document/d/1zKwLlkgQ5no-1fRFxx5o8KYPNJYukvuOb44T-LXKrwU/edit?usp=sharing'
@@ -63,7 +63,7 @@ const Home = () => {
                 >
                   Get CV
                 </Button>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
