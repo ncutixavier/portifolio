@@ -18,23 +18,23 @@ const About = () => {
   const skills = [
     {
       id: 1,
-      name: 'Vue JS & Vuex',
-      value: 80,
+      name: 'Vue JS, Vuex & Nuxt JS',
+      value: 85,
     },
     {
       id: 2,
       name: 'React JS & Redux',
-      value: 75,
+      value: 82,
     },
     {
       id: 3,
       name: 'Node JS & Express',
-      value: 80,
+      value: 84,
     },
     {
       id: 4,
       name: 'Mongo DB, PostgreSQL and SQLite',
-      value: 80,
+      value: 86,
     },
   ];
 
