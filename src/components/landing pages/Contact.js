@@ -14,6 +14,7 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import RoomIcon from '@material-ui/icons/Room';
 import PhoneIcon from '@material-ui/icons/Phone';
 import emailjs from 'emailjs-com';
+import { InlineWidget } from 'react-calendly';
 import { init } from 'emailjs-com';
 init('user_8Q8lp87WvxGxE6xiXQ68f');
 
@@ -144,75 +145,74 @@ class Contact extends Component {
             },
         ];
         return (
-            <div className='contact' name='contact'>
-                <Container>
-                    <div className='contact-title'>
-                        Get in <span>touch</span>
+          <div className='contact' name='contact'>
+            <Container>
+              <div className='contact-title'>
+                Get in <span>touch</span>
+              </div>
+              <Row>
+                {info.map((c, i) => (
+                  <Col md={4} sm={12} key={i} className='my-4'>
+                    <div className='c-contact'>
+                      <div className='c-icon mr-4'>{c.icon}</div>
+                      <div className=''>
+                        <div className='h2'>{c.text}</div>
+                        <div className='h4'>{c.value}</div>
+                      </div>
                     </div>
-                    <Row>
-                        {info.map((c, i) => (
-                            <Col md={4} sm={12} key={i} className='my-4'>
-                                <div className='c-contact'>
-                                    <div className='c-icon mr-4'>{c.icon}</div>
-                                    <div className=''>
-                                        <div className='h2'>{c.text}</div>
-                                        <div className='h4'>{c.value}</div>
-                                    </div>
-                                </div>
-                            </Col>
-                        ))}
-                    </Row>
-                    <Form onSubmit={(e) => this.handleSubmit(e)}>
-                        <div className='field-input'>
-                            <div className='h1 my-5'>Send me a quick message!</div>
+                  </Col>
+                ))}
+              </Row>
+              <Form onSubmit={(e) => this.handleSubmit(e)}>
+                <div className='field-input'>
+                  <div className='h1 my-5'>Send me a quick message!</div>
 
-                            <FormGroup className='mb-4'>
-                                {/* <Label for="examplePassword">Name</Label> */}
-                                <Input
-                                    type='text'
-                                    invalid={this.state.nameErrorStatus}
-                                    name='name'
-                                    value={this.state.name}
-                                    onChange={(e) => this.change(e)}
-                                    placeholder='Name'
-                                />
-                                <FormFeedback>{this.state.nameError}</FormFeedback>
-                            </FormGroup>
+                  <FormGroup className='mb-4'>
+                    {/* <Label for="examplePassword">Name</Label> */}
+                    <Input
+                      type='text'
+                      invalid={this.state.nameErrorStatus}
+                      name='name'
+                      value={this.state.name}
+                      onChange={(e) => this.change(e)}
+                      placeholder='Name'
+                    />
+                    <FormFeedback>{this.state.nameError}</FormFeedback>
+                  </FormGroup>
 
-                            <FormGroup className='mb-4'>
-                                {/* <Label for="exampleEmail">Email</Label> */}
-                                <Input
-                                    type='email'
-                                    invalid={this.state.emailErrorStatus}
-                                    name='email'
-                                    value={this.state.email}
-                                    onChange={(e) => this.change(e)}
-                                    placeholder='Email'
-                                />
-                                <FormFeedback>{this.state.emailError}</FormFeedback>
-                            </FormGroup>
+                  <FormGroup className='mb-4'>
+                    {/* <Label for="exampleEmail">Email</Label> */}
+                    <Input
+                      type='email'
+                      invalid={this.state.emailErrorStatus}
+                      name='email'
+                      value={this.state.email}
+                      onChange={(e) => this.change(e)}
+                      placeholder='Email'
+                    />
+                    <FormFeedback>{this.state.emailError}</FormFeedback>
+                  </FormGroup>
 
-                            <FormGroup className='mb-4'>
-                                {/* <Label for="exampleText">Message</Label> */}
-                                <Input
-                                    invalid={this.state.messageErrorStatus}
-                                    name='message'
-                                    type='textarea'
-                                    value={this.state.message}
-                                    onChange={(e) => this.change(e)}
-                                    placeholder='Message'
-                                />
-                                <FormFeedback>
-                                    {this.state.messageError}
-                                </FormFeedback>
-                            </FormGroup>
-                            <Button color='secondary' className='send-btn' block>
-                                Send
-                            </Button>
-                        </div>
-                    </Form>
-                </Container>
-            </div>
+                  <FormGroup className='mb-4'>
+                    {/* <Label for="exampleText">Message</Label> */}
+                    <Input
+                      invalid={this.state.messageErrorStatus}
+                      name='message'
+                      type='textarea'
+                      value={this.state.message}
+                      onChange={(e) => this.change(e)}
+                      placeholder='Message'
+                    />
+                    <FormFeedback>{this.state.messageError}</FormFeedback>
+                  </FormGroup>
+                  <Button color='secondary' className='send-btn' block>
+                    Send
+                  </Button>
+                </div>
+              </Form>
+              <InlineWidget url='https://calendly.com/ncutixavier' className="calendly-container"/>
+            </Container>
+          </div>
         );
     }
 }

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Container, Row, Col } from 'reactstrap';
-import CardMedia from '@material-ui/core/CardMedia';
 import { connect } from 'react-redux';
 import { getProjects } from '../../redux/actions/projectsAction';
 import ProjectSkeleton from '../../components/skeleton/ProjectsSkeleton'
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 class Project extends Component {
 
@@ -14,41 +14,50 @@ class Project extends Component {
     render() {
 
         return (
-            <div className="project service" name="work">
-                <Container>
-                    <div className="service-title">Featured <span>Projects</span></div>
+          <div className='project service' name='work'>
+            <Container>
+              <div className='service-title'>
+                Featured <span>Projects</span>
+              </div>
 
-                    {this.props.projects.loading ? (
-                        <ProjectSkeleton />
-                    ) : this.props.projects.error.length !== 0 ? (
-                        this.props.projects.error.message
-                    ) : this.props.projects.projects.projects ? (
-                        <Row className="mx-0">
-                            {this.props.projects.projects.projects.map((p, i) => (
-                                <Col key={i} className="s-col mb-5" md="4" sm="12">
-                                    <CardMedia
-                                        className="card-image"
-                                        image={"https://morning-thicket-92126.herokuapp.com/images/" + p.image}
-                                        title="Contemplative Reptile"
-                                    />
+              {this.props.projects.loading ? (
+                <ProjectSkeleton />
+              ) : this.props.projects.error.length !== 0 ? (
+                this.props.projects.error.message
+              ) : this.props.projects.projects.projects ? (
+                <Row className='mx-0'>
+                  {this.props.projects.projects.projects.map((p, i) => (
+                    <Col key={i} className='s-col mb-5' md='4' sm='12'>
+                      <div className='card-title-details'>
+                        <h3>{p.title}</h3>
+                        <p>{p.description}</p>
+                      </div>
 
-                                    <h3 className="text-center mt-3">{p.title}</h3>
-                                    <p>{p.description}</p>
-                                    <div className="language">
-                                        <span>{p.languages}</span>
-                                    </div>
-                                    <a rel="noreferrer" href={p.link} className="more-btn" target="_blank">More</a>
-                                </Col>
-                            ))}
-                        </Row>
+                      <div className='languages'>
+                        <span>{p.languages}</span>
+                      </div>
 
-                    ) : (
-                        <ProjectSkeleton />
-                    )}
-
-                </Container>
-            </div>
-        )
+                      <div className='card-links'>
+                        <a
+                          rel='noreferrer'
+                          href={p.link.split(',')[0]}
+                          target='_blank'
+                        >
+                          Explore
+                        </a>
+                        <a rel='noreferrer' href={p.link.split(',')[1]}>
+                          <GitHubIcon />
+                        </a>
+                      </div>
+                    </Col>
+                  ))}
+                </Row>
+              ) : (
+                <ProjectSkeleton />
+              )}
+            </Container>
+          </div>
+        );
     }
 }
 

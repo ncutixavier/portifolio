@@ -268,40 +268,56 @@ a.active {
     background-size: cover;
 
     .s-col {
+        padding: 1.5rem;
         border-radius: 10px;
-        padding: 0;
         background: linear-gradient(to left, #34495e, #1c2833);
 
-        p {
-            color: #bbc2ce;
-            padding: 10px;
+        .card-title-details{
+            color: #fff;
             text-align: center;
-            line-height: 2;
-        }
+            padding: 1rem .6rem;
+            background-color: #34495e;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 10px;
+            h3{
+                font-size: 1.7rem;
+            }
 
-        .language {
-            text-align: center;
-            position: relative;
-            bottom: 41%;
-            span {
-                background-color: #38495a;
-                padding: 8px 12px;
+            p{
+                margin: 8px 0;
+                font-size: 1.3rem;
                 color: #bbc2ce;
             }
         }
 
-        .more-btn {
+        .languages{
+            background-color: #34495e;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 10px 0;
+            color: #a2a8b3;
+        }
+
+        .card-links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: #34495e;
             font-size: 15px;
             text-transform: uppercase;
             padding: 8px 13px;
-            display: flex;
-            justify-content: center;
             border-radius: 0 0 10px 10px;
-            transition: all 1s;
-            color: #ccc;
-            &:hover {
-                background-color: #2e4053;
+            a{
+                color: #4dd0e1;
+                font-size: 1.1rem;
+                text-decoration: none;
+                transition: all 0.3s;
+                padding: 3px 5px;
+                cursor: pointer;
+                &:hover{
+                    color: #fff;
+                }
             }
         }
     }
@@ -421,6 +437,21 @@ a.active {
 
 .service-btn{
     margin-top: 40px;
+}
+
+.calendly-inline-widget{
+    height: 670px!important;
+}
+
+@media (max-width: 600px) {
+    .calendly-inline-widget{
+        height: 300px!important;
+        margin-top: 30px;
+
+        iframe{
+            border-radius: 20px;
+        }
+    }
 }
 
 @keyframes nudge {
