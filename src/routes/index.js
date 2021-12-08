@@ -8,13 +8,13 @@ import Main from '../components/landing pages/Main'
 class Index extends Component {
     render() {
         return (
-            <BrowserRouter>
-                <Route path="/home" exact component={HomePage} />
-                <Route path="/" exact component={Main} />
-                <Route path="/blogs" exact component={LandingPage} />
-                <Route path="/blogs/:id" exact component={Article} />
-            </BrowserRouter>
-        )
+          <BrowserRouter>
+            <Route path='/home' exact component={HomePage} />
+            <Route path='/' exact component={Main} />
+            <Route path='/blogs' exact component={LandingPage} />
+            <Route path='/blogs/:id' exact component={Article} />
+          </BrowserRouter>
+        );
     }
 }
 

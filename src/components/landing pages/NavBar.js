@@ -14,6 +14,7 @@ import { cyan } from '@material-ui/core/colors';
 import DehazeIcon from '@material-ui/icons/Dehaze';
 import { Link } from 'react-scroll';
 // import {NavLink} from 'react-router-dom'
+import RouteChangeTracker from '../RouteChangeTracker';
 
 const useStyles = makeStyles((theme) => ({
   purple: {
@@ -78,7 +79,7 @@ export const NavBar = (props) => {
       to: 'contact',
     },
   ];
-console.log(":::", color)
+  console.log(':::', color);
   return (
     <div name='home'>
       <Navbar fixed='top' color={color} light expand='md'>
@@ -114,6 +115,7 @@ console.log(":::", color)
           </Nav>
         </Collapse>
       </Navbar>
+      <RouteChangeTracker />
     </div>
   );
 };
