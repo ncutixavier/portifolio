@@ -3,9 +3,11 @@ import Navigation from './Navigation';
 import FullArticle from './FullArticle';
 import Footer from './Footer';
 import '../assets/scss/landing.scss';
+import ReactGA from 'react-ga';
 
 export class Article extends Component {
   render() {
+    ReactGA.pageview(window.location.pathname + window.location.search);
     const postId = this.props.match.params.id;
     return (
       <div className="article-by-id">
