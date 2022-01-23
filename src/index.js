@@ -7,7 +7,7 @@ import { Provider } from 'react-redux'
 import "../src/assets/scss/index.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactGA from 'react-ga';
-const TRACKING_ID = "G-9GQ7GJWWCS";
+const TRACKING_ID = "G-TNK6P1VS41";
 ReactGA.initialize(TRACKING_ID);
 
 ReactDOM.render(
