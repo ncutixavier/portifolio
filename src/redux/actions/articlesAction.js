@@ -4,7 +4,7 @@ import axios from 'axios';
 export const getArticles = () => async (dispatch) => {
   try {
     const res = await axios.get(
-      `https://morning-thicket-92126.herokuapp.com/api/v1/blogs`
+      `https://zany-fox-lab-coat.cyclic.app/api/v1/blogs`
     );
     dispatch({
       type: GET_ARTICLES,
