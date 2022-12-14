@@ -17,24 +17,34 @@ const About = () => {
 
   const skills = [
     {
+      id: 11,
+      name: "Flutter, Dart",
+      value: 85,
+    },
+    {
       id: 1,
-      name: 'Vue JS, Vuex & Nuxt JS',
+      name: "Vue JS, Vuex & Nuxt JS",
       value: 85,
     },
     {
       id: 2,
-      name: 'React JS & Redux',
+      name: "React JS & Redux",
       value: 82,
     },
     {
       id: 3,
-      name: 'Node JS & Express',
+      name: "Node JS & Express",
       value: 84,
     },
     {
       id: 4,
-      name: 'Mongo DB, PostgreSQL and SQLite',
+      name: "Mongo DB, PostgreSQL and SQLite",
       value: 86,
+    },
+    {
+      id: 12,
+      name: "Mocha, Chai, Cypress",
+      value: 85,
     },
   ];
 
