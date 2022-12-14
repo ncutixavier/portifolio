@@ -268,7 +268,7 @@ a.active {
     background-size: cover;
 
     .s-col {
-        padding: 1.5rem;
+        padding: 1.8rem;
         border-radius: 10px;
         background: linear-gradient(to left, #34495e, #1c2833);
 
@@ -331,11 +331,8 @@ a.active {
 
 @media (min-width: 768px) {
     .project {
-        .row {
-            justify-content: space-between;
-        }
         .s-col {
-            flex: 0 0 23% !important;
+            // flex: 0 0 23% !important;
             background: linear-gradient(to left, #34495e, #1c2833);
         }
     }

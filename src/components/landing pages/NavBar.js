@@ -79,7 +79,7 @@ export const NavBar = (props) => {
       to: 'contact',
     },
   ];
-  console.log(':::', color);
+
   return (
     <div name='home'>
       <Navbar fixed='top' color={color} light expand='md'>

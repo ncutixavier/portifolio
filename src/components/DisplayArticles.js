@@ -24,7 +24,7 @@ export class DisplayArticles extends Component {
     // };
 
     const handleCardClick = (article) => {
-      console.log('clicked card is ');
+      // console.log('clicked card is ');
       };
       
     return (

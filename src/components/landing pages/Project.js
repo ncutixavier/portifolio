@@ -27,7 +27,7 @@ class Project extends Component {
               ) : this.props.projects.projects.projects ? (
                 <Row className='mx-0'>
                   {this.props.projects.projects.projects.map((p, i) => (
-                    <Col key={i} className='s-col mb-5' md='4' sm='12'>
+                    <Col key={i} className='s-col mb-5' md='3' sm='12'>
                       <div className='card-title-details'>
                         <h3>{p.title}</h3>
                         <p>{p.description}</p>
