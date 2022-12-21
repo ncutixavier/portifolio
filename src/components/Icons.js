@@ -22,23 +22,23 @@ function Icons() {
     const icons = [
       {
         icon: <FacebookIcon />,
-        link: 'https://www.facebook.com/ndagijimana.xavier.1',
+        link: "https://www.facebook.com/ndagijimana.xavier.1",
       },
       {
         icon: <TwitterIcon />,
-        link: 'https://twitter.com/ncutixavier',
+        link: "https://twitter.com/ncutixavier",
       },
       {
         icon: <InstagramIcon />,
-        link: 'https://www.instagram.com/ncutixavier/?hl=en',
+        link: "https://www.instagram.com/ncutixavier/?hl=en",
       },
       {
         icon: <LinkedInIcon />,
-        link: 'http://linkedin.com/in/ncuti-xavier-979284197',
+        link: "https://www.linkedin.com/in/xavier-ncuti-979284197/",
       },
       {
         icon: <GitHubIcon />,
-        link: 'https://github.com/ncutixavier',
+        link: "https://github.com/ncutixavier",
       },
     ];
 
