@@ -198,12 +198,10 @@ export default function Articles(props) {
                     </Typography>
                   </Box>
                   {loadComments ? (
-                    <div style={{ textAlign: "center" }}>
-                      Loading comments...
-                    </div>
+                    <div style={{ padding: "2rem 0" }}>Loading comments...</div>
                   ) : errorComments ? (
-                    <div style={{ textAlign: "center" }}>
-                      Error occured while loading comments, try again
+                    <div style={{ padding: "2rem 0" }}>
+                      Error occured while fetching comments, try again
                     </div>
                   ) : (
                     <div className="my-5">
@@ -227,7 +225,7 @@ export default function Articles(props) {
                   )}
 
                   <Button
-                    variant="contained"
+                    variant="outlined"
                     color="primary"
                     disableElevation
                     className={classes.commentBtn}
@@ -242,11 +240,17 @@ export default function Articles(props) {
                     className="mt-5"
                     centered
                   >
-                    <ModalHeader toggle={toggle}>Send your comment</ModalHeader>
+                    <ModalHeader toggle={toggle}>
+                      <span style={{ fontSize: "16px", fontWeight: "600" }}>
+                        Write your comment
+                      </span>
+                    </ModalHeader>
                     <Form onSubmit={handleSubmit}>
                       <ModalBody>
                         <FormGroup>
-                          <Label for="name">Name</Label>
+                          <Label for="name" style={{ fontSize: "14px" }}>
+                            Name
+                          </Label>
                           <Input
                             type="text"
                             id="name"
@@ -259,7 +263,9 @@ export default function Articles(props) {
                           )}
                         </FormGroup>
                         <FormGroup>
-                          <Label for="name">Comment</Label>
+                          <Label for="name" style={{ fontSize: "14px" }}>
+                            Comment
+                          </Label>
                           <Input
                             type="textarea"
                             name="comment"
@@ -279,18 +285,23 @@ export default function Articles(props) {
                           variant="contained"
                           className="mr-3"
                         >
-                          <span className="mr-3">Send</span>
+                          <span style={{ fontSize: "12px" }}>Send</span>
                           {submitted && (
                             <Spinner
                               color="light"
-                              style={{ width: "1rem", height: "1rem" }}
+                              style={{
+                                width: "1rem",
+                                height: "1rem",
+                                marginLeft: "1rem",
+                              }}
                             />
                           )}
                         </Button>
                         <Button
                           color="secondary"
                           onClick={toggle}
-                          variant="contained"
+                          variant="outlined"
+                          style={{ fontSize: "12px" }}
                         >
                           Cancel
                         </Button>
