@@ -76,7 +76,7 @@ export default function Articles(props) {
       // console.log('Val:', values);
       axios
         .post(
-          `https://zany-fox-lab-coat.cyclic.app/api/v1/blogs/${props.id}/comments`,
+          `https://portifolio-backend.onrender.com/api/v1/blogs/${props.id}/comments`,
           values
         )
         .then(function (response) {
