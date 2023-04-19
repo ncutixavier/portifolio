@@ -10,7 +10,7 @@ const schema = yup
   .object({
     name: yup.string().required("Name is required"),
     message: yup.string().required("Message is required"),
-    email: yup.string().email(),
+    email: yup.string().email().required(),
   })
   .required();
 
@@ -87,7 +87,10 @@ const Contact = () => {
   ];
 
   return (
-    <div className="text-gray-100 bg-gray-950 sm:px-10 xs:px-5 min-h-[80vh] flex items-center flex-col py-10">
+    <div
+      id="contact"
+      className="text-gray-100 bg-gray-950 sm:px-10 xs:px-5 min-h-[80vh] flex items-center flex-col py-10"
+    >
       <div className="grid md:grid-cols-2 xs:w-full w-[75%] mx-auto">
         <div className="pb-8">
           <div className="text-4xl xs:text-3xl font-semibold">
@@ -124,7 +127,7 @@ const Contact = () => {
                 <i className="fa-brands fa-twitter"></i>
               </div>
             </a>
-            <a href="https://twitter.com/ncutixavier" className="mr-8">
+            <a href="https://www.instagram.com/ncutixavier/" className="mr-8">
               <div className="border-2 border-purple-500 hover:text-purple-500 w-12 h-12 flex items-center justify-center text-gray-400">
                 <i className="fa-brands fa-instagram"></i>
               </div>
@@ -181,9 +184,7 @@ const Contact = () => {
             ></textarea>
           </div>
           {loading ? (
-            <button
-              className="bg-green-700 hover:bg-green-800 w-full py-3"
-            >
+            <button className="bg-green-700 hover:bg-green-800 w-full py-3">
               Sending email...
             </button>
           ) : (
