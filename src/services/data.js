@@ -164,4 +164,24 @@ export const data = {
     //   id: "61ae7c1bbf6e973438e6d5fc",
     // },
   ],
+  contact: [
+    {
+      icon: "fa-solid fa-phone",
+      label: "Phone",
+      link: "tel:+25078357335",
+      value: "+250 783 573 335",
+    },
+    {
+      icon: "fa-solid fa-envelope",
+      label: "Email",
+      link: "mailto:ncuti60@gmail.com",
+      value: "ncuti60@gmail.com",
+    },
+    {
+      icon: "fa-solid fa-location-dot",
+      label: "Address",
+      link: "https://goo.gl/maps/5r2e5eSgPmvfGZiJA",
+      value: "KG 10 Ave, Kigali, Rwanda",
+    },
+  ],
 };

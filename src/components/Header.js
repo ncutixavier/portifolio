@@ -8,7 +8,7 @@ const Header = () => {
           NCUTI.X
         </div>
         <div class="hidden sm:flex gap-10 h-full items-center">
-          {["Experience", "Work", "blogs", "Contact"].map((item) => (
+          {["Experience", "Work", "blogs"].map((item) => (
             <div
               class="hover:border-b-2 hover:bg-gray-950 h-full flex px-3 items-center cursor-pointer"
               key={item}
