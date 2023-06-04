@@ -4,7 +4,10 @@ import { data } from "../services/data";
 const Projects = () => {
   return (
     <div>
-      <div className="text-gray-100 bg-gray-900 sm:px-10 xs:px-5 py-10 z-20">
+      <div
+        id="work"
+        className="text-gray-100 bg-gray-900 sm:px-10 xs:px-5 py-10 z-20"
+      >
         <div class="grid md:grid-cols-2 gap-10">
           <div class="gap-10 flex-col flex">
             {data.projects.map(
@@ -57,7 +60,8 @@ const Projects = () => {
                     target="_blank"
                     href={item.link}
                     class="h-auto bg-gray-950 hover:scale-105 scale-100 sc ease-in-out duration-500"
-                    key={i} rel="noreferrer"
+                    key={i}
+                    rel="noreferrer"
                   >
                     <div class="w-[100%] h-[400px p-8">
                       <img

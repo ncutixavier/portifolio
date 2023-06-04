@@ -3,7 +3,7 @@ import { data } from "../services/data";
 
 const Experience = () => {
   return (
-    <div className="text-gray-100 bg-gray-950 sm:px-10 xs:px-5 pt-10">
+    <div id="experience" className="text-gray-100 bg-gray-950 sm:px-10 xs:px-5 pt-10">
       <div class="uppercase font-semibold text-gray-400">Work Experience</div>
       <div class="w-[40%] xs:w-full text-4xl xs:text-3xl font-semibold py-5">
         Companies I have worked for in the past.
