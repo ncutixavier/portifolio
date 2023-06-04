@@ -4,7 +4,7 @@ import profile from "../assets/profile.png";
 const Home = () => {
   return (
     <div>
-      <div className="h-[calc(100vh-64px)] bg-gray-90 flex xs:flex-col">
+      <div id="home" className="h-[calc(100vh-64px)] bg-gray-90 flex xs:flex-col">
         <div className="w-1/2 h-full xs:w-full bg-gray-800 hover:bg-gray-400">
           <img
             src={profile}

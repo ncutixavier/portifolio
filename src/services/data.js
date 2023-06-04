@@ -164,6 +164,7 @@ export const data = {
     //   id: "61ae7c1bbf6e973438e6d5fc",
     // },
   ],
+<<<<<<< HEAD
   contact: [
     {
       icon: "fa-solid fa-phone",
@@ -184,4 +185,6 @@ export const data = {
       value: "KG 10 Ave, Kigali, Rwanda",
     },
   ],
+=======
+>>>>>>> 241f0ad (implement new portifolio)
 };
