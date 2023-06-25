@@ -4,7 +4,7 @@ import profile from "../assets/profile.png";
 const Home = () => {
   return (
     <div>
-      <div id="home" className="h-[calc(100vh-64px)] bg-gray-90 flex xs:flex-col">
+      <div id="home" className="h-[calc(100vh-64px)] bg-gray-90 flex xs:flex-col xs:h-auto">
         <div className="w-1/2 h-full xs:w-full bg-gray-800 hover:bg-gray-400">
           <img
             src={profile}
@@ -13,7 +13,7 @@ const Home = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-1/2 xs:w-full flex-col flex justify-center xs:px-5 px-10 text-white">
+        <div className="w-1/2 xs:w-full flex-col flex justify-center xs:px-5 px-10 text-white xs:pb-8">
           <div className="xs:mt-3 text-5xl font-chivo-mono xs:text-2xl">
             I'm Xavier Ncuti.
           </div>
