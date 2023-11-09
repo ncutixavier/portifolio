@@ -7,7 +7,7 @@ export const data = {
       title: "Co-Founder & Software Developer",
       skills: "Flutter, Vue JS & Tailwind CSS",
       description:
-        "I am currently working as Co-Founder and Software developer on different projects",
+        "I currently hold roles as both Co-Founder and Software Developer, contributing to various projects.",
     },
     {
       id: "03",
@@ -16,7 +16,7 @@ export const data = {
       title: "Freelance Frontend Developer",
       skills: "JavaScript, Vue JS & Tailwind CSS",
       description:
-        "I am currently working as Frontend developer on the company clients projects",
+        "I breeze through frontend development for the company's client projects with ease.",
     },
     {
       id: "02",
@@ -25,7 +25,7 @@ export const data = {
       title: "Technical Team Lead",
       skills: "Leadership, Code Review, React & Node JS",
       description:
-        "I am currently working there since 2021 to help the young generation to start software development  career.",
+        "I've been there since 2021, aiding the younger generation in kickstarting their careers in software development.",
     },
 
     {
@@ -35,7 +35,7 @@ export const data = {
       title: "Frontend & Mobile Developer",
       skills: "Nuxt JS, Vue JS & Flutter",
       description:
-        "I’ve worked on different internal tools for Bongalo such as Web and Mobile app during 2022 - 2023.",
+        "In the period of 2022-2023, I dedicated my efforts to developing diverse internal tools for Bongalo, including both web and mobile applications.",
     },
     {
       id: "05",
@@ -44,7 +44,7 @@ export const data = {
       title: "Frontend Developer",
       skills: "Javascript, Vue JS & Vuetify",
       description:
-        "I’ve worked on different internal tools for Bongalo such as e-commerce web app during 2021 - 2022.",
+        "Throughout 2021-2022, I contributed to various internal tools at Hepta, including an e-commerce web app.",
     },
   ],
   projects: [
@@ -55,12 +55,30 @@ export const data = {
       image:
         "https://firebasestorage.googleapis.com/v0/b/portifolio-a24d4.appspot.com/o/portifolio%2Fprojects%2Fhovastore.png?alt=media&token=a59f137c-e742-49eb-be86-1b21c6ec64b3",
       description:
-        "This is a mobile app owned by HOVA AI which will be used by SMEs to manage and control their business transactions.",
+        "HOVA AI owns this mobile app designed for SMEs to efficiently oversee and manage their business transactions.",
+    },
+    {
+      title: "Bongalo App",
+      skills: "Flutter, Dart",
+      link: "http://bongalo.com/",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/portifolio-a24d4.appspot.com/o/portifolio%2Fprojects%2Fbongalo.png?alt=media&token=7eb3e0e8-acda-4eb5-9faa-55f47bc3f2ec",
+      description:
+        "Bongalo offers visitors, travelers, and business people across Africa the simplest and most trustworthy housing solution.",
+    },
+    {
+      title: "Keza Shop",
+      description:
+        "Hepta Analytics owns an e-commerce web app that integrates a chatbot for engaging interactions with users.",
+      skills: "Vue JS, Vuetify & Vuex",
+      link: "http://shop.keza.ai/",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/portifolio-a24d4.appspot.com/o/portifolio%2Fprojects%2Fkeza.png?alt=media&token=5d10790b-2722-4537-bc4f-c3fe8098ae37",
     },
     {
       title: "Leave Management System",
       description:
-        "Web application that might be used by different organization to manage employees'leave as well as leave request",
+        "A web application designed for potential use by various organizations, facilitating the management of employees' leave and the processing of leave requests.",
       skills: "React JS, MUI, Redux & Node Js",
       link: "https://nx-leave-app.netlify.app/",
       image:
@@ -69,20 +87,11 @@ export const data = {
     {
       title: "Merchandise Online System",
       description:
-        "Web application that used in a factory to manage and control the orders, samples and productions in realtime",
+        "A web application utilized in a factory setting to dynamically oversee and control real-time orders, samples, and production processes.",
       skills: "React JS, MUI, Redux & Node Js",
       link: "https://nx-merchandise.netlify.app/",
       image:
         "https://firebasestorage.googleapis.com/v0/b/portifolio-a24d4.appspot.com/o/portifolio%2Fprojects%2Fmerchandise.png?alt=media&token=d4ce09c7-739f-49fb-812e-3463f66182dc",
-    },
-    {
-      title: "Keza Shop",
-      description:
-        "E-commerce web app that uses chatbot to interact with the users",
-      skills: "Vue JS, Vuetify & Vuex",
-      link: "http://shop.keza.ai/",
-      image:
-        "https://firebasestorage.googleapis.com/v0/b/portifolio-a24d4.appspot.com/o/portifolio%2Fprojects%2Fkeza.png?alt=media&token=5d10790b-2722-4537-bc4f-c3fe8098ae37",
     },
     // {
     //   date_updated: "2021-12-06T21:08:28.162Z",
