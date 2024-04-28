@@ -13,14 +13,14 @@ const Home = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-1/2 xs:w-full flex-col flex justify-center xs:px-5 px-10 xs:pb-8">
-          <div className="xs:mt-3 text-5xl font-chivo-mono xs:text-2xl text-gray-300">
+        <div className="w-1/2 xs:w-full flex-col flex justify-center xs:items-center xs:px-4 px-10 xs:pb-8">
+          <div className="xs:mt-8 text-5xl font-chivo-mono xs:text-2xl text-gray-200 xs:text-center">
             Xavier Ncuti,
           </div>
-          <div className="xs:mt-3 mt-6 xs:text-2xl text-4xl font-chivo-mono text-gray-400">
+          <div className="xs:mt-8 mt-6 xs:text-2xl text-4xl font-chivo-mono text-gray-400 xs:text-center">
             A passionate software developer crafting solutions in kigali, Rwanda.
           </div>
-          <div className="xs:mt-8 mt-[60px] xs:text-[16px] text-xl text-gray-400 leading-9">
+          <div className="xs:mt-8 mt-[60px] xs:text-[16px] text-xl text-gray-400 leading-9 xs:text-center">
             I'm currently available for freelancer work. If you have a project
             that you want to get started, think you need my help with something
             or just fancy saying hey, then{" "}
