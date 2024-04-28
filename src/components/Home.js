@@ -13,21 +13,18 @@ const Home = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-1/2 xs:w-full flex-col flex justify-center xs:px-5 px-10 text-white xs:pb-8">
-          <div className="xs:mt-3 text-5xl font-chivo-mono xs:text-2xl">
-            I'm Xavier Ncuti.
+        <div className="w-1/2 xs:w-full flex-col flex justify-center xs:px-5 px-10 xs:pb-8">
+          <div className="xs:mt-3 text-5xl font-chivo-mono xs:text-2xl text-gray-300">
+            Xavier Ncuti,
           </div>
-          <div className="xs:mt-3 mt-6 xs:text-2xl text-5xl font-chivo-mono">
-            A software Developer
-          </div>
-          <div className="xs:mt-3 mt-6 text-5xl xs:text-2xl font-chivo-mono text-gray-500">
-            Based in Rwanda.
+          <div className="xs:mt-3 mt-6 xs:text-2xl text-4xl font-chivo-mono text-gray-400">
+            A passionate software developer crafting solutions in kigali, Rwanda.
           </div>
           <div className="xs:mt-8 mt-[60px] xs:text-[16px] text-xl text-gray-400 leading-9">
             I'm currently available for freelancer work. If you have a project
             that you want to get started, think you need my help with something
             or just fancy saying hey, then{" "}
-            <a href="mailto:ncuti60@gmail.com" className="text-blue-600">
+            <a href="https://calendar.app.google/yzi33BthDGyyPPbr8" target="_blank" rel="noreferrer" className="text-blue-600">
               get in touch
             </a>
             .

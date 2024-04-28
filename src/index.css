@@ -42,6 +42,12 @@ code {
   outline: 1px solid slategrey;
 }
 
+.bg-appointment {
+  background-image: url("./assets/calendar-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
