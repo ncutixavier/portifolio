@@ -70,7 +70,7 @@ const Contact = () => {
       icon: "fa-solid fa-phone",
       label: "Phone",
       link: "tel:+25078357335",
-      value: "+250 783 573 335",
+      value: "+250 727 787 640",
     },
     {
       icon: "fa-solid fa-envelope",
