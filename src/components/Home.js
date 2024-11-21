@@ -18,14 +18,12 @@ const Home = () => {
             Xavier Ncuti,
           </div>
           <div className="xs:mt-8 mt-6 xs:text-2xl text-4xl font-chivo-mono text-gray-400 xs:text-center">
-            A passionate software developer crafting solutions in kigali, Rwanda.
+            A passionate software developer crafting innovative solutions for users around the world. 🌍✨.
           </div>
           <div className="xs:mt-8 mt-[60px] xs:text-[16px] text-xl text-gray-400 leading-9 xs:text-center">
-            I'm currently available for freelancer work. If you have a project
-            that you want to get started, think you need my help with something
-            or just fancy saying hey, then{" "}
+            I'm currently open to freelance work! Whether you have a project you’d like to kick off, need my expertise on something, or just want to say hello, {" "}
             <a href="https://calendar.app.google/yzi33BthDGyyPPbr8" target="_blank" rel="noreferrer" className="text-blue-600">
-              get in touch
+              feel free to reach out. 🚀
             </a>
             .
           </div>
