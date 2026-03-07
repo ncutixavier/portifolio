@@ -8,8 +8,7 @@ const Home = () => {
         <div className="w-1/2 h-full xs:w-full bg-gray-800 hover:bg-gray-400">
           <img
             src={profile}
-            alt=""
-            srcset=""
+            alt="Xavier Ncuti - Full Stack Developer"
             className="w-full h-full object-cover"
           />
         </div>
