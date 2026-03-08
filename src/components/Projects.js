@@ -63,7 +63,7 @@ const Projects = () => {
                     key={i}
                     rel="noreferrer"
                   >
-                    <div class="w-[100%] h-[400px p-8">
+                    <div class="w-[100%] h-[400px] p-8">
                       <img
                         src={item.image}
                         alt="project"
