@@ -1,0 +1,5 @@
+# robots.txt for https://ncutixavier.netlify.app/
+User-agent: *
+Allow: /
+
+Sitemap: https://ncutixavier.netlify.app/sitemap.xml
