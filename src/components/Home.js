@@ -9,10 +9,10 @@ const Home = () => {
           <img
             src={profile}
             alt="Xavier Ncuti - Full Stack Developer"
-            className="w-full h-full object-cover animate-float"
+            className="w-full h-full object-cover motion-safe:animate-float"
           />
         </div>
-        <div className="w-1/2 xs:w-full flex-col flex justify-center xs:items-center xs:px-4 px-10 xs:pb-8 animate-fade-up">
+        <div className="w-1/2 xs:w-full flex-col flex justify-center xs:items-center xs:px-4 px-10 xs:pb-8 motion-safe:animate-fade-up">
           <div className="xs:mt-8 text-5xl font-chivo-mono xs:text-2xl text-gray-200 xs:text-center">
             Xavier Ncuti,
           </div>
