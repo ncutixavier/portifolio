@@ -145,8 +145,7 @@ export const data = {
       description: "Amazon Landing page clone with React JS",
       skills: "React JS",
       link: "https://amazonclon.netlify.app/",
-      image:
-        "https://firebasestorage.googleapis.com/v0/b/portifolio-a24d4.appspot.com/o/portifolio%2Fprojects%2Famazon.png?alt=media&token=df1e2289-b57e-4d2c-94a9-d49704d5afff",
+      image: "/amazon.png",
     },
     // {
     //   date_updated: "2021-12-06T21:08:28.162Z",
